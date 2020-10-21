@@ -1,0 +1,18 @@
+class masu:
+    def __init__(self, color, direction):#[0,1]上下左右
+        self.color = color
+        self.direction = direction
+def color_dicide(color_name):
+    if color_name == "red":
+        return (20,50,60)
+    if color_name == "blue":
+        return (10,20,80)
+masus = []
+colors = ["red","red","blue"]
+directions = [[0],[0],[0,1]]
+for n in range(3):
+    tmp = masu(colors[n], direcitons[n])
+    masus.append(tmp)
+for tmp_masu in masus:
+        masu_draw = pygame.draw.rect(screen, color_decide(tmp_masu.color) ,Rect(a,b,100,100),5) #マスの描写 色　場所(横縦)　幅
+masus[2].color = "orange"
